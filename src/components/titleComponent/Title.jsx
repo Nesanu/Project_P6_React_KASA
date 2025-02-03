@@ -5,7 +5,7 @@ export function Title() {
   return (
     <>
       <h1 className="title">KASA</h1>
-      <img src={KasaImg} alt="" />
+      <img src={KasaImg} alt="Titre de l'application immobilière" />
     </>
   );
 }

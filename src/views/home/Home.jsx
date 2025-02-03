@@ -1,5 +1,5 @@
 import { Title } from "../../components/titleComponent/Title";
-import "./style.css";
+import "./style.scss";
 import { CounterTitle } from "../../components/counter/CounterTitle";
 
 export function Home() {
