@@ -1,4 +1,7 @@
-@use "../../../styles/index";
+@import '../../../styles/index';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
 
 .header {
   display: flex;

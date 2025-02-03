@@ -1,9 +1,9 @@
 // import React from "react";
-import Logo from "../../../assets/images/logo/LOGO(1).png";
+import Logo from "../../../assets/images/logo/LOGO_GRAND.png";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 
-const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <img src={Logo} alt="Logo de Kasa" className={styles.logo} aria-label="Logo de Kasa" />
@@ -16,7 +16,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li className={styles.navItem}>
-            <NavLink to="/a-propos" className={({ isActive }) => (isActive ? styles.active : "")}>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : "")}>
               A propos
             </NavLink>
           </li>
@@ -26,4 +26,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+// export default Header;

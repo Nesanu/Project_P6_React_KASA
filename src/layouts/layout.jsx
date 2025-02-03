@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 export function Layout({children}) {
     return (
         <>
-            <header>
+            {/* <header>
                     <h1>MON APPLICATION</h1>
                     <nav>
                         <ul>
@@ -15,7 +15,7 @@ export function Layout({children}) {
                             </li>
                         </ul>
                     </nav>
-            </header>
+            </header> */}
             <main>
                 {children}
             </main>
