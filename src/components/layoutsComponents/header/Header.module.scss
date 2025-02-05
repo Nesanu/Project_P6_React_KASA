@@ -1,18 +1,18 @@
-@import '../../../styles/index';
-@import '../../../styles/mixins';
-@import '../../../styles/variables';
-
+@use '/src/styles/mixins';
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 68px;
+  width: 100%;
+  border: 1px solid black;
 }
 
 .logo {
   height: 47px;
   width: 145px;
-  @include media-query(desktop) {
+  @include mixins.media-query(desktop) {
     height: 68px;
     width: 211px;
   }
@@ -29,7 +29,7 @@ nav ul {
     color: black;
     text-decoration: none;
     line-height: 34.22px;
-    @include media-query(desktop) {
+    @include mixins.media-query(desktop) {
       text-transform: initial;
       font-size: 24px;
     }
@@ -38,11 +38,11 @@ nav ul {
 
 a.active {
   border-bottom: 1px solid black;
-  @include media-query(desktop) {
+  @include mixins.media-query(desktop) {
     border-bottom: 2px solid black;
   }
 }
 
 a:visited {
-  color: $black-font-color;
+  color: black;
 }

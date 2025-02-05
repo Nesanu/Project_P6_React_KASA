@@ -1,13 +1,12 @@
-import Header from '../../components/layoutsComponents/header/Header';
-import Footer from '../../components/layoutsComponents/footer/Footer';
 import './style.scss';
+import { Banner } from '../../components/banner/banner';
 
+/**
+ * @description URL Localhost:PORT/about
+ * @return Composant JSX de la vue About
+ */
 export function About() {
     return (
-        <>
-        <Header />
-        <h2>Chez vous, partout et ailleurs</h2>
-        <Footer />
-        </>
+        <Banner bannerType="about"/>
     )
 }

@@ -1,6 +1,6 @@
-@import "../../styles/index";
-@import "../../styles/mixins";
-@import "../../styles/variables";
+@use "/src/styles/index";
+@use "/src/styles/mixins";
+@use "/src/styles/variables";
 
 .homeContainer {
   display: flex;
@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
 
-  @include media-query(desktop) {
+  @include mixins.media-query(desktop) {
     height: 223px;
   }
 
@@ -47,7 +47,7 @@
     position: relative;
     z-index: 1;
     padding: 1rem;
-    @include media-query(desktop) {
+    @include mixins.media-query(desktop) {
       font-size: 48px;
     }
   }
@@ -66,7 +66,7 @@
     width: 100%;
   }
 
-  @include media-query(tablet) {
+  @include mixins.media-query(tablet) {
     width: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@
     // }
   }
 
-  @include media-query(desktop) {
+  @include mixins.media-query(desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);

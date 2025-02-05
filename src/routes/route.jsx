@@ -13,7 +13,8 @@ export const routes = createBrowserRouter([
             <Layout>
                 <Home />
             </Layout>
-        )
+        ),
+        errorElement:<p>Error page</p>
     },
     {
         path:"/about",
@@ -21,6 +22,16 @@ export const routes = createBrowserRouter([
             <Layout>
                 <About/>
             </Layout>
-        )
-    }
+        ),
+        errorElement:<p>Error page</p>
+    },
+    {
+        path:"/logement/:id",
+        element: (
+            <Layout>
+                <p>LOGEMENT AVEC ID</p>
+            </Layout>
+        ),
+        errorElement:<p>Error page ID Introuvable</p>
+    },
 ])

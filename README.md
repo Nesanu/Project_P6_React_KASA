@@ -10,6 +10,7 @@ Currently, two official plugins are available:
 
 
 PS C:\Users\nicol\my-react-app> npm run dev
+Ctrl + C ---> O/N
 
 > my-react-app@0.0.0 dev
 > vite
@@ -17,10 +18,10 @@ PS C:\Users\nicol\my-react-app> npm run dev
 
   VITE v6.0.11  ready in 1292 ms
 
-  ➜  Local:   http://localhost:5173/
+  ➜  Local:   http://localhostr:5173/
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
-h
+
 
   Shortcuts
   press r + enter to restart the server

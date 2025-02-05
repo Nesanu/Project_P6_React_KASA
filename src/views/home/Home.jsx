@@ -1,20 +1,20 @@
-import { Title } from "../../components/titleComponent/Title";
 import "./style.scss";
-import { CounterTitle } from "../../components/counter/CounterTitle";
-import Header from "../../components/layoutsComponents/header/Header";
-import Footer from '../../components/layoutsComponents/footer/Footer';
+import { Banner } from "../../components/banner/banner";
 
+/**
+ * @URL : Localhost:PORT/
+ * @description Composant JSX pour la vue 'Home'
+ * @return : JSX Component
+ */
 export function Home() {
   return (
-    <>
-      <Header />
-      <h2>Welcome to Home Page</h2>
-      <Title />
-      <CounterTitle valeurTitre="Essai" class='active'/>
-      <Footer />
-    </>
+    <div className="homeContainer">
+        <Banner text={"Chez vous, partout et ailleurs"} bannerType="home" />
+        {/* 
+          TODO Crée un composant Logements 
+          - Dans ce composant on doit pouvoir boucler sur une liste d'élément 
+          - Ces éléments sont des composants enfant ( logement )
+        */}
+    </div>
   );
 }
-
-
-

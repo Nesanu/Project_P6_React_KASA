@@ -3,8 +3,10 @@ import Logo from "../../../assets/images/logo/LOGO_WHITE.png";
 import styles from "./Footer.module.scss";
 // import { NavLink } from "react-router-dom";
 
-
-const Footer = () => {
+/**
+ * Footer est le bas de page de mon application
+ */
+export function Footer() {
   return (
     <footer className={styles.footer}>
       <img src={Logo} alt="Kasa" />
@@ -12,5 +14,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;
