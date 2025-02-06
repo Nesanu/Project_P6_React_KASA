@@ -1,4 +1,7 @@
-@import "../../styles/index";
+// @import "../../styles/index";
+// @import '../../styles/main.scss';
+@use "/src/styles.index";
+@use "src/styles/main.scss";
 
 .introContainer {
   width: 100%;
@@ -6,7 +9,7 @@
   overflow: hidden;
   border-radius: 1rem;
 
-  @include media-query(desktop) {
+  @include mixins.media-query(desktop) {
     height: 223px;
   }
 
@@ -16,4 +19,28 @@
     object-fit: cover;
     object-position: center;
   }
+}
+
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 40px);
+
+    @media screen and (max-width: 500px){
+        min-height: calc(100vh - 20px);
+    }
+}
+
+.about_main{
+    width: 95%;
+    margin: 0 auto;
+    flex-grow: 1;
+    &_collapse{
+        margin: 40px auto;
+        @media screen and (max-width: 550px){
+            margin: 20px auto;
+        }
+    }
 }
