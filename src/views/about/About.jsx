@@ -1,6 +1,10 @@
 import './style.scss';
 import { Banner } from '../../components/banner/banner';
 import Collapse from '../../components/collapse/Collapse';
+// import Header from "../../components/header/Header";
+// import Banner from '../../components/banner/Banner';
+// import Collapse from '../../components/collapse/Collapse';
+// import Footer from '../../components/footer/Footer';
 
 /**
  * @description URL Localhost:PORT/about
@@ -12,11 +16,7 @@ import Collapse from '../../components/collapse/Collapse';
 //     )
 // }
 
-// Exemple code brouillon:
-// import Header from "../../components/header/Header";
-// import Banner from '../../components/banner/Banner';
-// import Collapse from '../../components/collapse/Collapse';
-// import Footer from '../../components/footer/Footer';
+
 
 export function About() {
 
