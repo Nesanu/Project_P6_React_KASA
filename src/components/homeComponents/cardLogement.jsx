@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 // };
 
 
-// import PropTypes from 'prop-types';
+// Version essai: import PropTypes from 'prop-types';
 
 // logement.propTypes = {
 //     text: PropTypes.node.isRequired,
