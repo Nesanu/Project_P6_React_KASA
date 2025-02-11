@@ -6,7 +6,7 @@ import styles from "./Footer.module.scss";
 /**
  * Footer est le bas de page de mon application
  */
-export function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <img src={Logo} alt="Kasa" />
@@ -14,3 +14,4 @@ export function Footer() {
     </footer>
   );
 };
+export { Footer };

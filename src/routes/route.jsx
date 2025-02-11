@@ -1,18 +1,17 @@
-import { createBrowserRouter } from "react-router-dom"
+import { createBrowserRouter } from "react-router-dom";
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Layout } from "../layouts/layout"
-import { About } from "../views/about/About"
-import { Home } from "../views/home/Home"
+import { Layout } from "../layouts/layout";
+import { About } from "../views/about/About";
+import { Home } from "../views/home/Home";
 import ErrorPage from "../views/errors/error-page";
-// import ErrorPage from './error-page';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { loader as logementLoader } from "../routes/loader/loader";
+import  {Logement} from "../views/logement/Logement";
 // import { Routes } from "react-router-dom";
 
 
 /**
  * Constante gérant la route de mon application React
  */
-
 export const routes = createBrowserRouter([
     {
         path: "/",
@@ -21,7 +20,6 @@ export const routes = createBrowserRouter([
                 <Home />
             </Layout>
         ),
-        // errorElement:<p>Error page</p>
         errorElement: (
             <Layout>
                 <ErrorPage />
@@ -35,7 +33,6 @@ export const routes = createBrowserRouter([
                 <About/>
             </Layout>
         ),
-        // errorElement:<p>Error page</p>
         errorElement: (
             <Layout>
                 <ErrorPage />
@@ -43,19 +40,28 @@ export const routes = createBrowserRouter([
         ),
     },
     {
-        path:"/logement/:id",
+        path: "logement/:id",
         element: (
             <Layout>
-                <p>LOGEMENT AVEC ID</p>
+                <Logement />
             </Layout>
         ),
-        // errorElement:<p>Error page ID Introuvable</p>
+        loader: logementLoader,
         errorElement: (
             <Layout>
                 <ErrorPage />
             </Layout>
         ),
     },
+    // {Exemple de mauvaise configuration de route:
+    //     path: "*", // Equivalent de 404
+    //     element: (
+    //         <Layout>
+    //             {<ErrorPage />} 
+    //         </Layout>
+    //     ),
+    // }
+
     // {
     //     path:"*",
     //     element: (
@@ -72,10 +78,11 @@ export const routes = createBrowserRouter([
     // },
     // //                
    
+   
 ])
 
 
-// Exemple code de routing avec react-router-dom IA:
+// Exemple code de routing avec react-router-dom Chat Gpt:
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import ErrorPage from './error-page';
 // import HomePage from './home-page';

@@ -7,7 +7,7 @@ import styles from "./Header.module.scss";
  * @description : Partie du header 
  * @utilité : sert a me retourné un composant jsx qui comprend une navigation (via des nav link) [link](https://blbla.fr)
  */
-export function Header() {
+export default function Header() {
   return (
     <header className={styles.header}>
       <img src={Logo} alt="Logo de Kasa" className={styles.logo} aria-label="Logo de Kasa" />
@@ -29,3 +29,4 @@ export function Header() {
   );
 };
 
+export { Header };

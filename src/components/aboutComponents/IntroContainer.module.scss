@@ -1,7 +1,7 @@
 // @import "../../styles/index";
 // @import '../../styles/main.scss';
-@use "/src/styles.index";
-@use "src/styles/main.scss";
+@use "/src/styles/index";
+@use "/src/styles/main";
 
 .introContainer {
   width: 100%;
