@@ -1,9 +1,14 @@
 // @import '../../styles/main.scss';
 @use "/src/styles/main.scss";
 
-.carousel{
+// .carrousel_background_image {
+//     display: flex;
+//   border-radius: 20px;
+//   height: 415px;
+// }
+.carrousel{
     position: relative;
-    width: 95%;
+    width: 100%;
     border-radius: 25px;
     overflow: hidden;
     margin: 43px auto;
@@ -17,7 +22,9 @@
     &_arrow{
         position: absolute;
         top: 50%;
-        height: 10%;
+        // height: 10%;
+        height: 1em;
+        font-size: 10rem;
         transform: translateY(-50%);
         cursor: pointer;
         &:active{
@@ -35,7 +42,6 @@
         bottom: 25px;
         left: 50%;
         transform: translateX(-50%);
-        // color: $color-primary;
         color: #F6F6F6;
         font-weight: 500;
         font-size: clamp(14px, 2vw, 18px);
