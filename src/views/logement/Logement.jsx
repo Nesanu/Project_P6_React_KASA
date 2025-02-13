@@ -2,7 +2,7 @@ import "./Logement.scss";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import datas from "../../data/data.json";
-import Slider from "../../components/logementComponents/carrousel/Carrousel";
+import Carrousel from "../../components/logementComponents/carrousel/Carrousel";
 import Collapse from "../../components/collapse/Collapse";
 import ErrorPage from "../../views/errors/error-page";
 import Tag from "../../components/logementComponents/tag/Tag";
@@ -70,7 +70,7 @@ export function Logement() {
   
   return (
     <div className="accomodation_wrapper"> 
-      <Slider imageSlider={imageSlider} />
+      <Carrousel imageSlider={imageSlider} />
       <main className="accomodation">
         <div className="accomodation_content">
           <div className="accomodation_content_infos">

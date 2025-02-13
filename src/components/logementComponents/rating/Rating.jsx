@@ -7,7 +7,18 @@ Rating.propTypes = {
 };
 
 
-
+  /**Documentation de méthode 
+   * @description
+   * Ce composant permet de créer un système de notation.
+   * @param {number} rating - La note du logement.
+   * @returns {JSX.Element} - Un système de notation.
+   * @example
+   * <Rating rating={4} />
+   * @example
+   * <Rating rating={5} />
+   * @example
+   * <Rating rating={3} />
+    */
 
 export default function Rating({ rating }) {
 
