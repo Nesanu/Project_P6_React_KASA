@@ -130,3 +130,12 @@
 .custom-collapse{
     font-size: 10px;
 }
+
+.accomodation_collapse_item{
+    width: 50%;
+    border-radius: 10px;
+    height: 52px;
+    @media screen and (max-width: 650px){
+        width: 100%;
+    }
+}

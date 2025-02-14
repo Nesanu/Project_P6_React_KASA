@@ -1,6 +1,15 @@
 import styles from "./Error-pages.module.scss";
 import { Link, useRouteError } from "react-router-dom";
 
+
+  /**
+   * @module ErrorPage
+   * @description
+   * Ce composant représente une page d'erreur.
+   * @returns {JSX.Element} - Une page d'erreur.
+   * @example
+   * <ErrorPage />
+    */
 export default function ErrorPage() {
   const error = useRouteError();
   return (
