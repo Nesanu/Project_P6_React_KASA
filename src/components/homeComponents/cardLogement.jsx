@@ -1,6 +1,7 @@
 // import React from "react";
 import styles from "./CardLogement.module.scss";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 // const logement = {
 //     id: "1",
@@ -15,7 +16,18 @@ import { Link } from "react-router-dom";
 //     text: PropTypes.node.isRequired,
 // };
 
-import PropTypes from 'prop-types';
+/**Documentation de méthode 
+   * @description
+   * Ce composant représente une carte de logement.
+   * @param {string} id - L'identifiant du logement.
+   * @param {string} title - Le titre du logement.
+   * @param {string} cover - L'image de couverture du logement.
+   * @returns {JSX.Element} - Une carte de logement.
+   * @example
+   * <Card id="1" title="Beautiful Apartment" cover="path/to/image.jpg" />
+   * @example
+   * <Card id="2" title="Beautiful House" cover="path/to/image.jpg" />
+    */
 
 CardLogement.propTypes = {
     logement: PropTypes.shape({

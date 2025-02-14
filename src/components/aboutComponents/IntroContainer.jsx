@@ -1,5 +1,5 @@
 // import React from "react";
-import styles from "./IntroContainer.module.scss";
+import styles from "./IntroContainer.scss";
 import aboutPicture from "../../assets/images/background-images/about-intro.png";
 import { About } from "../../views/about/About";
 

@@ -62,7 +62,8 @@
       & svg {
         font-size: 2rem;
         @include mixins.media-query(desktop) {
-          font-size: 10rem;
+          font-size: 5rem;
+
         }
       }
     }
