@@ -1,10 +1,11 @@
-// import React from "react";
 import Logo from "../../../assets/images/logo/LOGO_WHITE.png";
 import styles from "./Footer.module.scss";
-// import { NavLink } from "react-router-dom";
 
 /**
  * Footer est le bas de page de mon application
+ * @returns {JSX.Element} - Le bas de page de l'application
+ * @example
+ * <Footer />
  */
 export default function Footer() {
   return (

@@ -1,4 +1,3 @@
-// @import '../../styles/main.scss';
 @use "/src/styles/variables";
 @use "/src/styles/mixins";
 @use "/src/styles/main.scss";
@@ -10,10 +9,10 @@
     // border-bottom-right-radius: 5px;
     border-radius: 10px;
     min-height: 52px;
+    height: auto;
     margin: 0 auto;
     font-size: inherit;
     &_title{
-        // @include flex(row, space-between, center);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -82,6 +81,3 @@
         }    
     }
 }
-// .collapse_title{
-//     font-size: 10px;
-// }

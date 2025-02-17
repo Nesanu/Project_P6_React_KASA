@@ -18,7 +18,7 @@ Ctrl + C ---> O/N
 
   VITE v6.0.11  ready in 1292 ms
 
-  ➜  Local:   http://localhostr:5173/
+  ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ➜  press h + enter to show help
 

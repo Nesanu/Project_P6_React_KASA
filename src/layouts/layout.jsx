@@ -6,7 +6,7 @@ import { Footer } from "../components/layoutsComponents/footer/Footer";
 
 /**
  * Le layout sert à englober ces enfants (via les childrens)
- * Dans notre cas ici il affiche de manière permanente les éléments suivant
+ * Dans notre cas ici il affiche de manière permanente les éléments suivants:
  * Header -> Bar de navigation + Titre de l'application web
  * Footer -> Bas de page avec les informations concernant l'application ( Ex. Copyright )
  */

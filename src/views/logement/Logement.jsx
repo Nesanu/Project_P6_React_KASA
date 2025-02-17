@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import datas from "../../data/data.json";
 import Carrousel from "../../components/logementComponents/carrousel/Carrousel";
 import Collapse from "../../components/collapse/Collapse";
-import ErrorPage from "../../views/errors/error-page";
+import ErrorPage from "../../views/errors/Error-page";
 import Tag from "../../components/logementComponents/tag/Tag";
 import Rating from "../../components/logementComponents/rating/Rating";
 
@@ -71,7 +71,7 @@ export function Logement() {
   return (
     <div className="accomodation_wrapper"> 
       <Carrousel imageSlider={imageSlider} />
-      <main className="accomodation">
+      <div className="accomodation">
         <div className="accomodation_content">
           <div className="accomodation_content_infos">
             <h1>{dataCurrentAccomodation.title}</h1>
@@ -107,7 +107,7 @@ export function Logement() {
             <Collapse title={"Équipements"} content={equipments} />
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

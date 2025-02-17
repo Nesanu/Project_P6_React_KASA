@@ -20,7 +20,6 @@ Card.propTypes = {
    * @example
    * <Card id="2" title="Beautiful House" cover="path/to/image.jpg" />
     */
-
 export default function Card({id, title, cover}) {
 
 	return (

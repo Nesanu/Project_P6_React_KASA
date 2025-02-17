@@ -1,20 +1,7 @@
-// import React from "react";
-import styles from "./CardLogement.module.scss";
+import "./CardLogement.scss";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 
-// const logement = {
-//     id: "1",
-//     cover: "path/to/image.jpg",
-//     title: "Beautiful Apartment"
-// };
-
-
-// Version essai: import PropTypes from 'prop-types';
-
-// logement.propTypes = {
-//     text: PropTypes.node.isRequired,
-// };
 
 /**Documentation de méthode 
    * @description
@@ -40,7 +27,7 @@ const CardLogement = ({ logement }) => {
   return (
     <article>
       <Link to={`logement/${logement.id}`}>
-        <div className={styles.shadow}></div>
+        <div className="shadow"></div>
         <img src={logement.cover} alt={logement.title} />
         <h3>{logement.title}</h3>
       </Link>

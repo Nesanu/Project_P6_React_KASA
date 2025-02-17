@@ -1,12 +1,5 @@
+import "./TitleCard.scss";
 
-
-// import React, { ReactNode, memo } from "react";
-
-import styles from "./TitleCard.module.scss";
-
-// TitleCardProps {
-//   text: ReactNode;
-// }
 
 import PropTypes from 'prop-types';
 
@@ -15,7 +8,8 @@ TitleCard.propTypes = {
 };
 const TitleCard = ({ text }) => {
   return (
-    <div className={styles.homeTitleContainer}>
+
+    <div className="homeTitleContainer">
       <h2>{text}</h2>
     </div>
   );

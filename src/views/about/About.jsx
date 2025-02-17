@@ -2,22 +2,6 @@ import './style.scss';
 import { Banner } from '../../components/banner/banner';
 import Collapse from '../../components/collapse/Collapse';
 
-// import Header from "../../components/header/Header";
-// import Banner from '../../components/banner/Banner';
-// import Collapse from '../../components/collapse/Collapse';
-// import Footer from '../../components/footer/Footer';
-
-/**
- * @description URL Localhost:PORT/about
- * @return Composant JSX de la vue About
- */
-// export function About() {
-//     return (
-//         <Banner bannerType="about"/>
-//     )
-// }
-
-
 
 export function About() {
 
@@ -48,9 +32,7 @@ export function About() {
         
 		<div className='about'>
             <Banner bannerType="about"/>
-			{/* <Header /> */}
-			{/* <Banner /> */}
-			<main className='about_main'>
+			<div className='about_main'>
 				{aboutDatas.map(data => {
 					return (
 						<div key={data.id} className="about_main_collapse">
@@ -58,8 +40,7 @@ export function About() {
 						</div>
 					)}
 				)}
-			</main>
-			{/* <Footer /> */}
+			</div>
 		</div>
 	)
 }

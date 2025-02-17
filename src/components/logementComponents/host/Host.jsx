@@ -1,6 +1,4 @@
-// import React from "react";
-import styles from "./Host.module.scss";
-
+import "./Host.scss";
 import PropTypes from "prop-types";
 
 Host.propTypes = {
@@ -22,7 +20,8 @@ Host.propTypes = {
 
 const Host = ({ name, picture }) => {
   return (
-    <div className={styles.owner}>
+    // <div className={styles.owner}>
+       <div className="owner">
       <p>{name}</p>
       <img src={picture} alt="Owner" />
     </div>

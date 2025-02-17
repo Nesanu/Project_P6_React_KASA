@@ -12,11 +12,6 @@ export function Home() {
     <div className="homeContainer">
       <Banner text={"Chez vous, partout et ailleurs"} bannerType="home" />
       <Gallery />
-      {/* 
-          TODO Crée un composant Logements 
-          - Dans ce composant on doit pouvoir boucler sur une liste d'élément 
-          - Ces éléments sont des composants enfant ( logement )
-        */}
     </div>
   );
 }

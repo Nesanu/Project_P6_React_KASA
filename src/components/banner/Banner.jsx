@@ -16,7 +16,10 @@ const bannerImages = {
  *  - Texte : Facultatif
  *  - Image : Soit Banner Home ou Banner About
  * @Résultat : Nous retourneras un élément jsx avec un choix d'image et une possibilité de texte centré sur ce même composant 
- */
+ * @exemple :
+ * <Banner text="Bienvenue sur notre site" bannerType="home" />
+ * <Banner bannerType="about" />
+ **/
 export function Banner({ text, bannerType  }) {
 
     const [bgImg, setBgImg] = useState('');

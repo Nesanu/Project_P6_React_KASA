@@ -1,43 +1,63 @@
-import './Carrousel.scss';
-import { useState } from 'react';
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons"; // TODO installer la dépendance fontawesom pour les icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types'
+import "./Carrousel.scss";
+import { useState } from "react";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons"; // Installer la dépendance fontawesom pour les icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PropTypes from "prop-types";
 
 Carrousel.propTypes = {
-    imageSlider: PropTypes.arrayOf(PropTypes.string).isRequired
-}
+  /**
+   * Liste des images à afficher dans le carrousel.
+   * Chaque élément est une URL d'image.
+   * @type {string[]}
+   * @example ["urlImg0", "urlImg1", "urlImg2"]
+   */
+  imageSlider: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
-  /**Documentation de méthode 
-   * @description
-   * Ce composant permet de créer un carrousel
-   * @param {string[]} imageSlider - Les images du carrousel.
-   * @returns {JSX.Element} - Un carrousel.
-   * @example
-   * <Slider imageSlider={["path/to/image1.jpg", "path/to/image2.jpg"]} />
-   * @example
-   * <Slider imageSlider={["path/to/image1.jpg", "path/to/image2.jpg", "path/to/image3.jpg"]} />
-    */
+/**
+ * Composant de carrousel permettant d'afficher une liste d'images avec navigation.
+ * 
+ * @component
+ * @param {Object} props - Les propriétés du composant.
+ * @param {string[]} props.imageSlider - Liste des URLs des images à afficher.
+ * @returns {JSX.Element} - Un carrousel d'images interactif.
+ * 
+ * @example
+ * <Carrousel imageSlider={["path/to/image1.jpg", "path/to/image2.jpg"]} />
+ * 
+ * @example
+ * <Carrousel imageSlider={["path/to/image1.jpg", "path/to/image2.jpg", "path/to/image3.jpg"]} />
+ */
+export default function Carrousel({ imageSlider }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const countImages = imageSlider.length;
+  /**
+   * Passe à l'image suivante dans le carrousel.
+   */
+  const handleNext = () => {
+    setCurrentIndex(currentIndex + 1);
+    if (currentIndex === imageSlider.length - 1) setCurrentIndex(0);
+  };
 
-export default function Carrousel({imageSlider}) {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const countImages = imageSlider.length;
-    const handleNext = () => {
-        setCurrentIndex(currentIndex + 1)
-        if(currentIndex === imageSlider.length - 1)
-            setCurrentIndex(0)
-    }
+  /**
+   * Passe à l'image précédente dans le carrousel.
+   */
+  const handlePrevious = () => {
+    setCurrentIndex(currentIndex - 1);
+    if (currentIndex === 0) setCurrentIndex(imageSlider.length - 1);
+  };
 
-    const handlePrevious = () => {
-        setCurrentIndex(currentIndex - 1)
-        if(currentIndex === 0)
-            setCurrentIndex(imageSlider.length - 1)
-    }
-
-    return (
-       <div className="carrouselContainer">
-            <img src={imageSlider[currentIndex]} alt={" index : " + (currentIndex + 1)} className="currentImg" />
-            {countImages <= 1 ? (
+  return (
+    <div className="carrouselContainer">
+      <img
+        src={imageSlider[currentIndex]}
+        alt={" index : " + (currentIndex + 1)}
+        className="currentImg"
+      />
+      {countImages <= 1 ? (
         ""
       ) : (
         <>
@@ -54,33 +74,6 @@ export default function Carrousel({imageSlider}) {
           </div>
         </>
       )}
-       </div>
-    )
+    </div>
+  );
 }
-
-
-/*
-//
-    Avant
-    <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carrousel'>
-            {imageSlider.length > 1 && 
-                <>
-                    <img 
-                        className='carrousel_arrow carrousel_arrow_left' 
-                        src={ArrowLeft} 
-                        alt="show next slider" 
-                        onClick={nextSlide}
-                    />
-                    <img 
-                        className='carrousel_arrow carrousel_arrow_right' 
-                        src={ArrowRight} 
-                        alt="show previous slider" 
-                        onClick={prevSlide}
-                    />
-                    {document.body.clientWidth > 768 && <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>}
-                    
-                </>
-            } 
-        </section>
-
-*/

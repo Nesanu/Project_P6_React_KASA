@@ -19,7 +19,6 @@ Rating.propTypes = {
    * @example
    * <Rating rating={3} />
     */
-
 export default function Rating({ rating }) {
 
     return (
