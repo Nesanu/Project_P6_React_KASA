@@ -15,7 +15,6 @@ import PropTypes from 'prop-types';
    * @example
    * <Card id="2" title="Beautiful House" cover="path/to/image.jpg" />
     */
-
 CardLogement.propTypes = {
     logement: PropTypes.shape({
         id: PropTypes.string.isRequired,

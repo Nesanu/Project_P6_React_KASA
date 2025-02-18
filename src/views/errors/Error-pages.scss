@@ -1,8 +1,8 @@
 @use "/src/styles/index";
 @use "/src/styles/variables";
 @use "/src/styles/mixins";
-@use "/src/styles/main.scss";
-
+@use "/src/styles/main";
+// @use "/src/styles/main.scss";
 .errorPage {
   display: flex;
   flex-direction: column;

@@ -1,11 +1,14 @@
-// import React from "react";
 import Logo from "../../../assets/images/logo/LOGO_GRAND.png";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 
-/**
+
+/**Documentation de méthode
  * @description : Partie du header 
- * @utilité : sert a me retourné un composant jsx qui comprend une navigation (via des nav link) [link](https://blbla.fr)
+ * @utilité : sert a me retourné un composant jsx qui comprend une navigation (via des nav link) [link](https://reactrouter.com/web/api/NavLink)
+ * @returns {JSX.Element} - Un container pour la page about
+ * @example
+ * <Header />
  */
 export default function Header() {
   return (
@@ -28,5 +31,4 @@ export default function Header() {
     </header>
   );
 };
-
 export { Header };

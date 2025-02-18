@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 
-  /**
+  /**Documentation de méthode
    * @description
    * Ce composant permet de créer un tag.
    * @param {string} tag - Le tag.
@@ -11,7 +11,6 @@ import PropTypes from 'prop-types';
    * @example
    * <Tag tag="Tag2" />
    */
- 
 export default function Tag({ tag }) {
     return (
         <button>

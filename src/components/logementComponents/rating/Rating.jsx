@@ -6,7 +6,6 @@ Rating.propTypes = {
     rating: PropTypes.number.isRequired
 };
 
-
   /**Documentation de méthode 
    * @description
    * Ce composant permet de créer un système de notation.

@@ -10,17 +10,22 @@ const bannerImages = {
     about: BannerAbout
   };
 
-/**
- * @descriptif : ELEMENT JSX  Générique
+/**Documentation de méthode 
+ * @description
+ * Ce composant représente une bannière.
+ * @descriptif : élément JSX Générique.
  * @Params
+ * @param {string} text - Le texte de la bannière.
+ * @param {string} bannerType - Le type de bannière.
  *  - Texte : Facultatif
  *  - Image : Soit Banner Home ou Banner About
- * @Résultat : Nous retourneras un élément jsx avec un choix d'image et une possibilité de texte centré sur ce même composant 
+ * @returns {JSX.Element} - Une bannière.
+ * @Résultat : Nous retourneras un élément JSX avec un choix d'image et une possibilité de texte centré sur ce même composant 
  * @exemple :
  * <Banner text="Bienvenue sur notre site" bannerType="home" />
  * <Banner bannerType="about" />
  **/
-export function Banner({ text, bannerType  }) {
+export function Banner({ text, bannerType }) {
 
     const [bgImg, setBgImg] = useState('');
 

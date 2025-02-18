@@ -1,7 +1,6 @@
 import "./collapse.scss";
 import arrow from "../../assets/images/arrow.png";
 import { useState } from "react";
-
 import PropTypes from "prop-types";
 
 Collapse.propTypes = {
@@ -42,7 +41,7 @@ export default function Collapse({ title, content }) {
         <div
           className={toggle ? "collapse_content" : "collapse_content_hidden"}
         >
-          {Array.isArray(content)
+          {Array.isArray(content)//if content is an array, map through it and return a paragraph for each item. Otherwise, return the content. 
             ? content.map((item, index) => {
                 return <p key={index}>{item}</p>;
               })

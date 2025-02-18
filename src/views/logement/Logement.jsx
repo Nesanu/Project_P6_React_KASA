@@ -46,10 +46,11 @@ export function Logement() {
   /** Documentation de méthode 
    * Variable name qui récupère le nom de l'hôte
    * @param {string} dataCurrentAccomodation.host.name - Nom de l'hôte
-   * @returns {JSX.Element}
-   * 
+   * @returns {JSX.Element} - Retourne le JSX de la page de l'hebergement
    */
   const name = dataCurrentAccomodation.host.name.split(" ");
+
+
  /**
   * Variable rating qui récupère la note de l'hebergement
   * @param {number} dataCurrentAccomodation.rating - Note de l'hebergement
@@ -57,7 +58,6 @@ export function Logement() {
   * @param {string} dataCurrentAccomodation.equipments - Equipements de l'hebergement
   * @returns {JSX.Element} - Retourne le JSX de la page de l'hebergement
   */ 
-
   const rating = parseInt(dataCurrentAccomodation.rating);
   const description = dataCurrentAccomodation.description;
   const equipments = dataCurrentAccomodation.equipments;
@@ -65,9 +65,10 @@ export function Logement() {
     /**
    * Documentation de méthode
    * On retourne le JSX de la page de l'hebergement
-   * 
+   * @returns {JSX.Element} - Retourne le JSX de la page de l'hebergement
+   * @example
+   * <Logement /> 
    */
-  
   return (
     <div className="accomodation_wrapper"> 
       <Carrousel imageSlider={imageSlider} />

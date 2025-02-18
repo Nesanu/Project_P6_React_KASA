@@ -8,12 +8,11 @@ import  {Logement} from "../views/logement/Logement";
 // import { Routes } from "react-router-dom";
 
 
-/**
+/**Documentation de méthode
  * @file routes.js
  * @description Ce fichier définit les routes principales de l'application en utilisant React Router.
  * Il configure les chemins, les composants à afficher et les gestionnaires d'erreur.
  */
-
 /**
  * @constant {Object} routes
  * @description Configuration des routes de l'application avec `react-router-dom`.

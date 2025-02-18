@@ -54,3 +54,16 @@ export default function Gallery() {
     </div>
   );
 }
+/**
+ * Documentation de méthode `.map()`
+ * @description
+ * Ce morceau de code utilise la méthode `.map()` pour parcourir le tableau `datas` et générer une liste de composants `<Card />`. 
+ * Chaque élément de `datas` est représenté par `data`, qui est un objet contenant les informations d'un logement. 
+ * (comme son `id`, `title`, et `cover`). 
+ * @param {object[]} datas - Les données des logements.
+ * @param {object} data - Les informations d'un logement.
+ * @param {string} data.id - L'identifiant du logement.
+ * @param {string} data.title - Le titre du logement.
+ * @param {string} data.cover - L'image de couverture du logement.
+ * @returns {JSX.Element[]} - Une liste de composants `<Card />`.
+*/

@@ -2,7 +2,13 @@ import './style.scss';
 import { Banner } from '../../components/banner/banner';
 import Collapse from '../../components/collapse/Collapse';
 
-
+  /**Documentation de méthode 
+   * @URL : Localhost:PORT/about
+   * @description Composant JSX pour la vue 'About'
+   * @return : JSX Component
+   * @example
+   * <About />
+  */
 export function About() {
 
 	const aboutDatas = [
@@ -27,9 +33,18 @@ export function About() {
 			"content": "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
 		}
 	]
-
-	return (
-        
+ /**Documentation de méthode 
+  * @description
+  * On map les données de la variable aboutDatas.
+  * @param {object} aboutDatas - Les données de la page 'About'
+  * @param {string} aboutDatas.id - L'id de la section
+  * @param {string} aboutDatas.title - Le titre de la section
+  * @param {string} aboutDatas.content - Le contenu de la section
+  * @returns {JSX.Element} - Retourne le JSX de la page 'About'
+  * @example
+  * <About />
+  */
+	return (    
 		<div className='about'>
             <Banner bannerType="about"/>
 			<div className='about_main'>
