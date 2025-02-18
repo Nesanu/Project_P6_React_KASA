@@ -1,5 +1,4 @@
-import "./Host.scss";
-// import styles from "./Host.module.scss";
+import "./Host.scss"; // importation du fichier SCSS par le biais de la méthode SCSS classique.// exemple de syntaxe de la méthode SCSS module: import styles from "./Host.module.scss";
 import PropTypes from "prop-types";
 
 Host.propTypes = {
@@ -21,8 +20,8 @@ Host.propTypes = {
 
 const Host = ({ name, picture }) => {
   return (
-    // <div className={styles.owner}>
-       <div className="owner">
+    //Utilisation de la méthode SCSS module (localisée): ex. <div className={styles.owner}>
+       <div className="owner"> 
       <p>{name}</p>
       <img src={picture} alt="Owner" />
     </div>
@@ -37,10 +36,10 @@ export default Host;
   * Syntaxe de la méthode SCSS classique: 
   * import styles from "./Host.module.scss";
   * <div className={styles.owner}>
-  * Nom file SCSS: Host.module.scss
+  * Nom file SCSS correspondant: Host.module.scss
   * 
   * Syntaxe de la méthode SCSS module (localisée):
   * import "./Host.scss";
   * <div className="owner">
-  * Nom file SCSS: Host.scss
-**/
+  * Nom file SCSS correspondant: Host.scss
+*/

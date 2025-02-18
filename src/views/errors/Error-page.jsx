@@ -14,7 +14,7 @@ export default function ErrorPage() {
   const error = useRouteError();
   return (
     <section className="errorPage">
-      {/* <section className={styles.errorPage}> */}
+     
       <h1 className="errorTitle">{error.status}</h1>
 
       <p className="errorMessage">
