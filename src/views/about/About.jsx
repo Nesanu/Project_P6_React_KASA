@@ -1,6 +1,8 @@
 import './style.scss';
 import { Banner } from '../../components/banner/banner';
 import Collapse from '../../components/collapse/Collapse';
+import PropTypes from 'prop-types';
+
 
   /**Documentation de méthode 
    * @URL : Localhost:PORT/about
@@ -59,3 +61,9 @@ export function About() {
 		</div>
 	)
 }
+
+About.propTypes = {
+	title: PropTypes.string,
+	content: PropTypes.string,
+	id: PropTypes.string,
+};

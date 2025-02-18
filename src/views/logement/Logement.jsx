@@ -17,8 +17,6 @@ export function Logement() {
    * @param {string} id - id de l'url
    * @returns {JSX.Element} - Retourne le JSX de la page de l'hebergement
     */
-
-
   const { id } = useParams();
 
   /**Documentation de méthode 
@@ -32,7 +30,6 @@ export function Logement() {
    * @param {string} dataCurrentAccomodation.pictures - Images du logement
    * @returns  - Retourne le JSX de la page de l'hebergement 
    */
-
   useEffect(() => {
     if (dataCurrentAccomodation) {
       setImageSlider(dataCurrentAccomodation.pictures);
