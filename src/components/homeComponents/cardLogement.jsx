@@ -22,6 +22,17 @@ CardLogement.propTypes = {
         title: PropTypes.string.isRequired,
     }).isRequired,
 };
+
+/**Documentation de méthode 
+ * @description
+ * Ce composant représente une carte de logement.
+ * @param {string} logement - Les informations du logement.
+ * @returns {JSX.Element} - Une carte de logement.
+ * @example
+ * <CardLogement logement={{id: "1", title: "Beautiful Apartment", cover: "path/to/image.jpg"}} />
+ * @example
+ * <CardLogement logement={{id: "2", title: "Beautiful House", cover: "path/to/image.jpg"}} />
+  */
 const CardLogement = ({ logement }) => {
   return (
     <article>

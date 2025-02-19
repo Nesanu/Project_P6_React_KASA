@@ -36,7 +36,7 @@ export default function Gallery() {
       }
     };
     loadDatas();
-  }, []);
+  }, []); // tableau de dépendance [] pour ne charger qu'une seule fois et évite les boucles infinies.
 
   if (loading) {
     return (
