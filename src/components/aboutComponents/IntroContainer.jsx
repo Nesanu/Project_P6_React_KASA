@@ -1,5 +1,5 @@
 import "./IntroContainer.scss"; // Style en module via un nommage d'import 'styles' le nom style n'est pas définitif (ex. css, class etc.. )
-import aboutPicture from "../../assets/images/background-images/about-intro.png";
+import aboutPicture from "../../assets/images/background-images/about-intro.jpg";
 import { About } from "../../views/about/About";
 
 /**Documentation de méthode

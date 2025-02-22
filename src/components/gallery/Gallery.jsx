@@ -24,7 +24,17 @@ export default function Gallery() {
       }, 500);
     });
   };
-
+  /**
+   * useEffect permet de charger les données de notre data.json
+   * et de les mettre à jour dans le state datas
+   * et de désactiver le loader
+   * @param {Function} loadDatas - Fonction qui charge les données
+   * @param {object[]} datas - Les données des logements
+   * @param {boolean} loading - L'état de chargement
+   * @param {Function} setDatas - Fonction qui met à jour les données
+   * @param {Function} setLoading - Fonction qui met à jour l'état de chargement  
+   * @returns {Function} - Les données des logements
+   */
   useEffect(() => {
     const loadDatas = async () => {
       try {

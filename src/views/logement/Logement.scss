@@ -5,11 +5,13 @@
 .accomodation_wrapper{
     display: flex;
     // height: 415px;
+    min-height: calc(100vh - 288px);
     width: 100%;
     // gap: 20px;
     gap: 2rem;
     background-color: #FFFFFF;
     flex-direction: column;
+
 }
 
 .accomodation{
@@ -17,7 +19,7 @@
     background-color: #FFFFFF;
     flex-grow: 1;
     &_content{
-        // @include flex(row, space-between, flex-start);
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -27,7 +29,7 @@
         width: 100%;
         margin: 0 auto;
         @media screen and (max-width: 650px){
-            // @include flex(column, space-between, flex-start); 
+            
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -80,7 +82,7 @@
             color: #FF6060;
             @media screen and (max-width: 650px){
                 width: 100%;
-                // @include flex(row-reverse, space-between, center);   
+                 
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;

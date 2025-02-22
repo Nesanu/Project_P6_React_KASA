@@ -1,7 +1,7 @@
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1em;
   }
   
   .aboutContentContainer {
@@ -9,22 +9,25 @@
     max-width: 1023px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1em;
   }
 
 .about{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 1em;
+    height: fit-content;
+
 }
 
 .about_main{
     width: 95%;
     margin: 0 auto;
     flex-grow: 1;
+    height: auto;
     &_collapse{
-        margin: 40px auto;
+        margin: 20px auto;
         @media screen and (max-width: 550px){
             margin: 20px auto;
         }

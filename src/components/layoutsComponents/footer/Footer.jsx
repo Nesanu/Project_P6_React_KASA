@@ -1,4 +1,4 @@
-import Logo from "../../../assets/images/logo/LOGO_WHITE.png";
+import Logo from "../../../assets/images/logo/LOGO_WHITE.svg";
 import "./Footer.scss";
 
 /**Documentation de méthode

@@ -1,6 +1,6 @@
 import './Banner.scss';
 import BannerHome from "/src/assets/images/background-images/bg-home-title.webp";
-import BannerAbout from "/src/assets/images/background-images/about-intro.png"; 
+import BannerAbout from "/src/assets/images/background-images/about-intro.jpg"; 
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 

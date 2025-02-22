@@ -8,7 +8,7 @@
     // border-bottom-left-radius: 5px;
     // border-bottom-right-radius: 5px;
     border-radius: 10px;
-    min-height: 52px;
+    min-height: 40px;
     height: auto;
     margin: 0 auto;
     font-size: inherit;
@@ -19,11 +19,10 @@
         gap: 10px;
         background-color:  #FF6060;
         color: #F6F6F6;
-        // color: #FFFFFF
         border-radius: 10px;
         font-weight: 700;
         font-size: clamp(13px, 1.8vw, 18px);
-        padding: 15px 15px;
+        padding: 10px 10px;
         cursor: pointer;
         .arrow{
             transition: all 0.2s ease-in-out;
@@ -66,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     gap: 70px;
-    margin: 30px auto;
+    margin: 20px auto;
     width: 100%;
     &_item{
         width: 50%;

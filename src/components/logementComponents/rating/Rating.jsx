@@ -1,5 +1,5 @@
-import greyStar from '../../../assets/images/grey_star.png';
-import redStar from '../../../assets/images/red_star.png';
+import greyStar from '../../../assets/images/grey_star.svg';
+import redStar from '../../../assets/images/red_star.svg';
 import PropTypes from 'prop-types';
 
 Rating.propTypes = {

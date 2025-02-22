@@ -1,4 +1,4 @@
-import Logo from "../../../assets/images/logo/LOGO_GRAND.png";
+import Logo from "../../../assets/images/logo/LOGO_GRAND.svg";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 
