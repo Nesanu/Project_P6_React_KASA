@@ -1,32 +1,49 @@
+# Kasa_App
 # React + Vite
+➜  Local:   http://localhost:5173/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur Kasa_App, une application web de location immobilière développée en React. Ce projet fait partie du parcours "Développeur Web" d'OpenClassrooms. 
 
-Currently, two official plugins are available:
+Aperçu
+Kasa_App est une application web conçue pour la location de logements. Elle permet aux utilisateurs de consulter une liste de logements, d'accéder aux détails de chaque propriété, et de naviguer entre différentes pages à l'aide de routes dynamiques.
+Accédez à la version en ligne de l'application : Kasa_App sur GitHub Pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fonctionnalités
+•	Affichage d'une liste de logements.
+•	Consultation des détails de chaque propriété (description, photos, équipements, etc.).
+•	Navigation entre différentes pages de l'application via un routeur.
+•	Gestion des erreurs 404 en cas de route incorrecte.
 
+Technologies utilisées
+•	React pour la création de composants dynamiques.
+•	Vite pour une configuration de projet rapide et optimisée.
+•	React Router pour la gestion des routes.
 
+Installation
+Pour installer et exécuter ce projet en local, suivez les étapes ci-dessous :
 
-PS C:\Users\nicol\my-react-app> npm run dev
-Ctrl + C ---> O/N
+1.	Clonez ce dépôt sur votre machine :
+git clone https://github.com/Nesanu/Project_P6_React_KASA.git
 
-> my-react-app@0.0.0 dev
-> vite
+Accédez au dossier du projet :
+cd kasa_app
 
+Installez les dépendances :
+npm install
 
-  VITE v6.0.11  ready in 1292 ms
+Lancez l'application en mode développement :
+npm run dev
 
-  ➜  Local:   http://localhost:5173/
-  ➜  Network: use --host to expose
-  ➜  press h + enter to show help
+5.	Accédez à l'application en ouvrant votre navigateur à l'adresse : http://localhost:3000.
 
+Contribuer
+Les contributions sont les bienvenues ! Si vous souhaitez apporter des améliorations ou corriger des bugs, merci de suivre les étapes suivantes :
+1.	Fork le projet.
+2.	Créez une branche pour vos modifications : git checkout -b feature/nom-de-la-fonctionnalité.
+3.	Commitez vos modifications : git commit -m 'Ajout d'une nouvelle fonctionnalité'.
+4.	Poussez vers la branche : git push origin feature/nom-de-la-fonctionnalité.
+5.	Ouvrez une pull request pour examen.
 
-  Shortcuts
-  press r + enter to restart the server
-  press u + enter to show server url
-  press o + enter to open in browser
-  press c + enter to clear console
-  press q + enter to quit
-   
+Licence
+Ce projet est sous licence MIT - voir le fichier LICENSE pour plus de détails.
+Retrouver également mes autres projets sur mon portfolio
